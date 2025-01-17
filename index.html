@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Man</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div class="game-modal">
+        <div class="content">
+            <img src="#" alt="gif">
+            <h4>Game Over!</h4>
+            <p>The correct word was: <b></b></p>
+            <button class="play-again">Play Again</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="spaceman-box">
+            <img src="#" draggable="false" alt="spaceman-box">
+            <h1>SpaceMan Game</h1>
+            <p>Current Score: <span id="score"></span></p>
+        </div>
+        <div class="game-box">
+            <ul class="word-display"></ul>
+            <h4 class="hint-text">Hint: <b></b></h4>
+            <h4 class="guesses-text">Incorrect guesses: <b></b></h4>
+            <div class="keyboard"></div>
+        </div>
+    </div>
+    <div class="difficulty-modal">
+        <div class="modal-content">
+            <h2>Select Difficulty</h2>
+            <div class="difficulty">
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <label for="word-list">Words Category:</label>
+                <select id="word-list">
+                    <option value="Animals">Animals</option>
+                    <option value="Movies">Movies</option>
+                    <option value="FootballPlayers">Football Players</option>
+                    <option value="Countries">Countries</option>
+                </select>
+                <button class="start-game" data-category="">Start Game</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
