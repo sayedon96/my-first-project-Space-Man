@@ -90,8 +90,14 @@ const wordList = {
         { word: 'russia', hint: 'Largest country in the world by land area.', difficulty: 'easy' },
         { word: 'mexico', hint: 'Known for its vibrant culture and cuisine.', difficulty: 'easy' },
         { word: 'egypt', hint: 'Known for its pyramids and ancient history.', difficulty: 'easy' },
-        { word: 'south korea', hint: 'Known for its technology and pop culture.', difficulty: 'easy' }
-    ]
+        { word: 'south korea', hint: 'Known for its technology and pop culture.', difficulty: 'easy' },
+        { word: 'netherlands', hint: 'European country known for its windmills and tulips.', difficulty: 'normal' },
+        { word: 'thailand', hint: 'Southeast Asian country famous for its beaches and cuisine.', difficulty: 'normal' },
+        { word: 'sweden', hint: 'Scandinavian country known for its design and neutrality.', difficulty: 'normal' },
+        { word: 'vanuatu', hint: 'Pacific island nation known for its scuba diving and active volcanoes.', difficulty: 'hard' },
+        { word: 'liechtenstein', hint: 'Small European country nestled between Switzerland and Austria.', difficulty: 'hard' },
+        { word: 'kyrgyzstan', hint: 'Central Asian country known for its mountainous terrain and nomadic culture.', difficulty: 'hard' }
+        ]
 }    
 
 const completedWords = [];

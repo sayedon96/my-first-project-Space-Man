@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Lora",sans-serif;
-    font-weight: 400;
+    font-weight: 350;
 }
 body {
     display: flex;
@@ -41,7 +41,7 @@ body {
 .game-box p {
     font-family: "Oswald";
     font-size: 20px;
-    color: rgba(0, 0, 0, 0.523);
+    color: rgba(1, 4, 7, 0.77);
     margin-bottom: 50px;
     text-align: right;
     padding-bottom:50px; 
