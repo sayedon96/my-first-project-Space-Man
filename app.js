@@ -1,3 +1,4 @@
+/*-------------- Constants -------------*/
 const wordList = {
     Animals: [
         { word: 'elephant', hint: 'Large mammal with a trunk.', difficulty: 'medium' },
@@ -14,7 +15,17 @@ const wordList = {
         { word: 'orangutan', hint: 'Great ape with long arms and reddish-brown hair.', difficulty: 'hard' },
         { word: 'armadillo', hint: 'Mammal with a protective armored shell.', difficulty: 'hard' },
         { word: 'narwhal', hint: 'Marine mammal with a long spiral tusk.', difficulty: 'hard' },
-        { word: 'axolotl', hint: 'Aquatic salamander that can regenerate limbs.', difficulty: 'hard' }
+        { word: 'axolotl', hint: 'Aquatic salamander that can regenerate limbs.', difficulty: 'hard' },
+        { word: 'rabbit', hint: 'Small mammal with long ears.', difficulty: 'easy' },
+        { word: 'dog', hint: 'Loyal pet and human companion.', difficulty: 'easy' },
+        { word: 'cat', hint: 'Independent pet that loves to climb.', difficulty: 'easy' },
+        { word: 'horse', hint: 'Commonly used for riding and racing.', difficulty: 'easy' },
+        { word: 'duck', hint: 'Waterfowl with a distinctive quack.', difficulty: 'easy' },
+        { word: 'sheep', hint: 'Farm animal known for its wool.', difficulty: 'easy' },
+        { word: 'frog', hint: 'Amphibian that can leap and croak.', difficulty: 'easy' },
+        { word: 'fish', hint: 'Aquatic animal with gills and fins.', difficulty: 'easy' },
+        { word: 'bird', hint: 'Creature with feathers and can often fly.', difficulty: 'easy' },
+        { word: 'cow', hint: 'Farm animal that produces milk.', difficulty: 'easy' }
     ],
     Movies: [
         { word: 'inception', hint: 'A movie about dreams within dreams.', difficulty: 'hard' },
@@ -31,7 +42,17 @@ const wordList = {
         { word: 'memento', hint: 'A man with short-term memory loss uses notes to find his wife’s killer.', difficulty: 'hard' },
         { word: 'amelie', hint: 'French film about a whimsical Parisian woman.', difficulty: 'hard' },
         { word: 'requiem', hint: 'A movie that depicts the impact of drug addiction.', difficulty: 'hard' },
-        { word: 'donnie', hint: 'A teenager is guided by a man in a rabbit suit.', difficulty: 'hard' }
+        { word: 'donnie', hint: 'A teenager is guided by a man in a rabbit suit.', difficulty: 'hard' },
+        { word: 'aladdin', hint: 'Animated film about a magic lamp.', difficulty: 'easy' },
+        { word: 'shrek', hint: 'An ogre\'s adventure to save a princess.', difficulty: 'easy' },
+        { word: 'frozen', hint: 'Animated movie with a queen who has ice powers.', difficulty: 'easy' },
+        { word: 'lion king', hint: 'Tale of a young lion\'s journey to become king.', difficulty: 'easy' },
+        { word: 'finding nemo', hint: 'A clownfish\'s adventure to find his son.', difficulty: 'easy' },
+        { word: 'toy story', hint: 'Life of toys when humans aren’t around.', difficulty: 'easy' },
+        { word: 'cars', hint: 'Animated movie about a race car.', difficulty: 'easy' },
+        { word: 'moana', hint: 'Adventure of a Polynesian girl on a sea journey.', difficulty: 'easy' },
+        { word: 'cinderella', hint: 'Story of a girl, a fairy godmother, and a lost shoe.', difficulty: 'easy' },
+        { word: 'beauty and the beast', hint: 'Tale as old as time, about love and transformation.', difficulty: 'easy' }
     ],
     FootballPlayers: [
         { word: 'ronaldo', hint: 'Famous Portuguese forward, multiple Ballon d\'Or winner.', difficulty: 'medium' },
@@ -48,7 +69,11 @@ const wordList = {
         { word: 'cannavaro', hint: 'Italian defender who won the 2006 World Cup.', difficulty: 'hard' },
         { word: 'beckenbauer', hint: 'German footballer and manager nicknamed "Der Kaiser".', difficulty: 'hard' },
         { word: 'ronaldkoeman', hint: 'Dutch defender and current football manager.', difficulty: 'hard' },
-        { word: 'baggio', hint: 'Italian footballer famous for his missed penalty.', difficulty: 'hard' }
+        { word: 'baggio', hint: 'Italian footballer famous for his missed penalty.', difficulty: 'hard' },
+        { word: 'rooney', hint: 'English forward, Manchester United legend.', difficulty: 'easy' },
+        { word: 'kane', hint: 'English striker known for his goal-scoring abilities.', difficulty: 'easy' },
+        { word: 'xavi', hint: 'Spanish midfield maestro, known for his vision.', difficulty: 'easy' },
+        { word: 'iniesta', hint: 'Spanish midfielder, Barcelona legend.', difficulty: 'easy' }
     ],
     Countries: [
         { word: 'canada', hint: 'Country known for maple syrup and ice hockey.', difficulty: 'easy' },
@@ -56,14 +81,20 @@ const wordList = {
         { word: 'japan', hint: 'Island nation known for sushi and samurai.', difficulty: 'easy' },
         { word: 'germany', hint: 'European country known for beer and sausages.', difficulty: 'easy' },
         { word: 'australia', hint: 'Country and continent known for kangaroos.', difficulty: 'easy' },
-        { word: 'kyrgyzstan', hint: 'Central Asian country known for its nomadic culture.', difficulty: 'hard' },
-        { word: 'liechtenstein', hint: 'Small European country between Switzerland and Austria.', difficulty: 'hard' },
-        { word: 'micronesia', hint: 'Region of thousands of small islands in the western Pacific Ocean.', difficulty: 'hard' },
-        { word: 'uzbekistan', hint: 'Central Asian nation known for its historic Silk Road cities.', difficulty: 'hard' },
-        { word: 'mozambique', hint: 'Southeast African country known for its Indian Ocean coastline.', difficulty: 'hard' }
-    ]
-};
+        { word: 'usa', hint: 'Known for its diverse culture and large economy.', difficulty: 'easy' },
+        { word: 'india', hint: 'Known for its rich history and diverse culture.', difficulty: 'easy' },
+        { word: 'china', hint: 'Known for its Great Wall and ancient civilization.', difficulty: 'easy' },
+        { word: 'france', hint: 'Known for the Eiffel Tower and fine cuisine.', difficulty: 'easy' },
+        { word: 'italy', hint: 'Known for its art, history, and cuisine.', difficulty: 'easy' },
+        { word: 'spain', hint: 'Known for its festivals and flamenco dancing.', difficulty: 'easy' },
+        { word: 'russia', hint: 'Largest country in the world by land area.', difficulty: 'easy' },
+        { word: 'mexico', hint: 'Known for its vibrant culture and cuisine.', difficulty: 'easy' },
+        { word: 'egypt', hint: 'Known for its pyramids and ancient history.', difficulty: 'easy' },
+        { word: 'south korea', hint: 'Known for its technology and pop culture.', difficulty: 'easy' }
+    ]}    
 
+const completedWords = [];
+/*----- Cached Element References  -----*/
 
 const wordDisplay = document.querySelector(".word-display");
 const guessesText = document.querySelector(".guesses-text b");
@@ -75,14 +106,18 @@ const wordListSelect = document.getElementById("word-list");
 const difficultySelect = document.getElementById("difficulty");
 const startGameBtn = document.querySelector(".start-game");
 const difficultyModal = document.querySelector(".difficulty-modal");
-const startGameButton = document.querySelector('.start-game');
+const scoreDisplay = document.getElementById("score");
+
+/*---------- Variables (state) ---------*/
 
 // Initializing game variables
-let currentWord
-let correctLetters
-let wrongGuessCount
+let currentWord = '';
+let correctLetters = [];
+let wrongGuessCount = 0;
 const maxGuesses = 6;
+let score = 0;
 
+/*-------------- Functions -------------*/
 const resetGame = () => {
     // Ressetting game variables and UI elements
     correctLetters = [];
@@ -97,17 +132,27 @@ const resetGame = () => {
 const getRandomWord = () => {
     const selectedCategory = startGameBtn.getAttribute("data-category");
     const selectedDifficulty = difficultySelect.value;
-    const categoryWords = wordList[selectedCategory].filter(word => word.difficulty === selectedDifficulty);
+    const categoryWords = wordList[selectedCategory].filter(word => word.difficulty === selectedDifficulty && !completedWords.includes(word.word));
+    if (categoryWords.length === 0) {
+        alert("No more words available in this category and difficulty.");
+        return;
+    }
     const { word, hint } = categoryWords[Math.floor(Math.random() * categoryWords.length)];
     currentWord = word;
     document.querySelector(".hint-text b").innerText = hint;
     resetGame();
-}
+};
+
 const startGame = () => {
     const selectedCategory = wordListSelect.value;
     startGameBtn.setAttribute("data-category", selectedCategory);
     getRandomWord();
     difficultyModal.classList.add('hidden');
+};
+
+const updateScore = () => {
+    score += 5;
+    scoreDisplay.innerText = score;
 };
 
 const gameOver = (isVictory) => {
@@ -116,8 +161,14 @@ const gameOver = (isVictory) => {
     gameModal.querySelector("img").src = `images/${isVictory ? 'victory' : 'lost'}.gif`;
     gameModal.querySelector("h4").innerText = isVictory ? 'Congrats!' : 'Game Over!';
     gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentWord}</b>`;
+    gameModal.querySelector("button").innerText = isVictory ? 'Countinue': 'Play Again';
     gameModal.classList.add("show");
-}
+
+    if (isVictory) {
+        updateScore();
+        completedWords.push(currentWord);
+    }
+};
 
 const initGame = (button, clickedLetter) => {
     // Checking if clickedLetter is exist on the currentWord
