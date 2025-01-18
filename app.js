@@ -91,7 +91,8 @@ const wordList = {
         { word: 'mexico', hint: 'Known for its vibrant culture and cuisine.', difficulty: 'easy' },
         { word: 'egypt', hint: 'Known for its pyramids and ancient history.', difficulty: 'easy' },
         { word: 'south korea', hint: 'Known for its technology and pop culture.', difficulty: 'easy' }
-    ]}    
+    ]
+}    
 
 const completedWords = [];
 /*----- Cached Element References  -----*/
@@ -129,12 +130,26 @@ const resetGame = () => {
     gameModal.classList.remove("show");
 }
 
+const changeDifficulty = () => {
+    const currentDifficulty = difficultySelect.value;
+    if (currentDifficulty === 'easy') {
+        difficultySelect.value = 'medium';
+        alert("Congratulations! You passed the easy difficulty.\ndifficulty will be updated to normal.");
+    } else if (currentDifficulty === 'medium') {
+        difficultySelect.value = 'hard';
+        alert("Congratulations! You passed the medium difficulty.\ndifficulty will be updated to hard.");
+    } else {
+        alert("Congratulations! You've completed all difficulties.");
+    }
+};
+
 const getRandomWord = () => {
     const selectedCategory = startGameBtn.getAttribute("data-category");
     const selectedDifficulty = difficultySelect.value;
     const categoryWords = wordList[selectedCategory].filter(word => word.difficulty === selectedDifficulty && !completedWords.includes(word.word));
     if (categoryWords.length === 0) {
-        alert("No more words available in this category and difficulty.");
+        changeDifficulty();
+        getRandomWord();
         return;
     }
     const { word, hint } = categoryWords[Math.floor(Math.random() * categoryWords.length)];
