@@ -4,9 +4,7 @@ my-first-project-Space-Man
 
 A simple game where the player guesses the word. The game includes different categories and difficulty levels.
 
-![Space Man Game](Screenshot%202025-01-18%20112438.png)
-![Space Man Game](Screenshot%202025-01-18%20111942.png)
-
+![Space Man Game](/images/Screenshot%202025-01-22%20084632.png)
 
 ## Features
 
@@ -24,8 +22,24 @@ A simple game where the player guesses the word. The game includes different cat
 5. If you guess incorrectly, the spaceman image will change.
 6. The game ends when you either guess the word correctly or make too many incorrect guesses.
 
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/space-man-game.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd space-man-game
+    ```
+3. Open `index.html` in your web browser to start the game.
+
 ## Technologies Used
 
 - HTML
 - CSS
 - JavaScript
+
+## License
+
+This project is licensed under the MIT License.
