@@ -136,17 +136,17 @@ const resetGame = () => {
     gameModal.classList.remove("show");
 }
 
-const changeDifficulty = () => {
-    const currentDifficulty = difficultySelect.value;
-    if (currentDifficulty === 'easy') {
-        difficultySelect.value = 'medium';
-        alert("Congratulations! You passed the easy difficulty.\ndifficulty will be updated to normal.");
-    } else if (currentDifficulty === 'medium') {
-        difficultySelect.value = 'hard';
-        alert("Congratulations! You passed the medium difficulty.\ndifficulty will be updated to hard.");
-    } else {
-        alert("Congratulations! You've completed all difficulties.");
-    }
+// const changeDifficulty = () => {
+//     const currentDifficulty = difficultySelect.value;
+//     if (currentDifficulty === 'easy') {
+//         difficultySelect.value = 'medium';
+//         alert("Congratulations! You passed the easy difficulty.\ndifficulty will be updated to normal.");
+//     } else if (currentDifficulty === 'medium') {
+//         difficultySelect.value = 'hard';
+//         alert("Congratulations! You passed the medium difficulty.\ndifficulty will be updated to hard.");
+//     } else {
+//         alert("Congratulations! You've completed all difficulties.");
+//     }
 };
 
 const getRandomWord = () => {
@@ -154,7 +154,7 @@ const getRandomWord = () => {
     const selectedDifficulty = difficultySelect.value;
     const categoryWords = wordList[selectedCategory].filter(word => word.difficulty === selectedDifficulty && !completedWords.includes(word.word));
     if (categoryWords.length === 0) {
-        changeDifficulty();
+        // changeDifficulty();
         getRandomWord();
         return;
     }

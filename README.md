@@ -4,7 +4,8 @@ my-first-project-Space-Man
 
 A simple game where the player guesses the word. The game includes different categories and difficulty levels.
 
-![Space Man Game](/images/Screenshot%202025-01-22%20084632.png)
+![Space man game](/images/Screenshot%202025-01-27%20090501.png)
+![Space man game](/images/Screenshot%202025-01-27%20090541.png)
 
 ## Features
 
